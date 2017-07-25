@@ -1,0 +1,127 @@
+:host /deep/ {
+	.background {
+    margin-bottom: 40px;
+    width: 100%;
+	}
+
+  .address {
+    padding-left: 38px;
+  }
+
+	.container {
+    background: white;
+
+    .affix-top {
+      position: fixed;
+      top: 0;
+    }
+
+    .affix-bottom {
+      position: absolute;
+      bottom: 70px;
+    }
+
+    ul.menu {
+      font-size: 14px;
+      color: #8f8f8f;
+      padding-top: 60px;
+      margin-top: 0;
+
+      li {
+        line-height: 16px;
+
+        a {
+          display: block;
+          padding: 4px 20px;
+          color: #8f8f8f;
+          font-weight: 300;
+
+          &:hover {
+            padding-left: 19px;
+            color: #5298fc;
+            text-decoration: none;
+            background-color: transparent;
+            border-left: 1px solid #5298fc;
+          }
+        }
+
+        > ul.menu {
+          display: none;
+          padding-top: 2px;
+          margin-top: 0;
+
+          > li {
+            margin-bottom: 2px;
+
+            > a {
+              padding-top: 1px;
+              padding-bottom: 1px;
+              padding-left: 30px;
+              font-size: 12px;
+              text-decoration: none;
+
+              &:hover {
+                padding-left: 29px;
+              }
+            }
+
+            &.active > a {
+              padding-left: 28px;
+            }
+          }
+        }
+
+        &.active {
+          margin-bottom: 3px;
+
+          > ul.menu {
+            display: block;
+          }
+
+          > a {
+            padding-left: 18px;
+            font-weight: 500;
+            color: #5298fc;
+            background-color: transparent;
+            border-left: 2px solid #5298fc;
+          }
+        }
+      }
+
+      a.back-to-top {
+        padding: 4px 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: 300;
+        color: #999;
+      }
+    }
+
+    .main {
+      padding-left: 20px;
+
+      h2 {
+        color: white;
+        font-weight: 200;
+        font-size: 3em;
+        text-align: center;
+        margin: 0;
+        color: #292e31;
+        margin-bottom: 30px;
+        line-height: 1.3em;
+        margin-top: 40px;
+      }
+
+      h3 {
+        font-weight: 300;
+        font-size: 1.8em;
+        margin: 15px 0;
+        color: #292e31;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+    }
+  }
+}

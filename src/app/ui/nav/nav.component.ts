@@ -8,14 +8,17 @@ import { Component, Input } from '@angular/core';
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="/">ngx-scrollspy</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
-              *ngFor="let item of navItems">
-            <a class="nav-link" [routerLink]="item.link" [fragment]="item.fragment">{{item.label}}</a>
-          </li>
-        </ul>
+      <div class="container">
+
+        <a class="navbar-brand" href="/">ngx-scrollspy</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                *ngFor="let item of navItems">
+              <a class="nav-link" [routerLink]="item.link" [fragment]="item.fragment">{{item.label}}</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   `,
