@@ -7,7 +7,9 @@ import { ScrollSpyAffixModule } from 'ngx-scrollspy/dist/plugin/affix'
 import { PagesRoutingModule } from './pages-routing.module';
 
 import { HomeComponent } from './components/home.component';
-import { TermsComponent } from './components/terms.component'
+
+import { PageService } from './page.service'
+import { DynamicComponent } from './components/dynamic.component'
 
 @NgModule({
   imports: [
@@ -18,7 +20,10 @@ import { TermsComponent } from './components/terms.component'
   ],
   declarations: [
     HomeComponent,
-    TermsComponent,
+    DynamicComponent,
+  ],
+  providers: [
+    PageService,
   ]
 })
 export class PagesModule { }

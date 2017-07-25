@@ -18,6 +18,10 @@ export class AppComponent {
       label: 'Terms',
       link: ['/', 'terms'],
     },
+    {
+      label: 'History',
+      link: ['/', 'history'],
+    },
   ]
 
 }
