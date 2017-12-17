@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ScrollSpyIndexModule } from 'ngx-scrollspy/dist/plugin'
-import { ScrollSpyAffixModule } from 'ngx-scrollspy/dist/plugin/affix'
+import { ScrollSpyIndexModule } from 'ngx-scrollspy'
+import { ScrollSpyAffixModule } from 'ngx-scrollspy'
 
 import { PagesRoutingModule } from './pages-routing.module';
 
